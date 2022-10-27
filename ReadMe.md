@@ -10,8 +10,8 @@ Vous aurez besoin d'installer [Node.js](https://nodejs.org/fr/) (version 16.16.0
 Téléchargez l'intégralité du projet. Vous devriez avoir le frontend et le backend au même niveau de dossier.<br>
 Par exemple :
 
-	C:\Users\Default\Documents\P7\frontend
-	C:\Users\Default\Documents\P7\backend
+	C:\Users\Default\Documents\Groupomania\frontend
+	C:\Users\Default\Documents\Groupomania\backend
 
 ## 2 - Démarrage du backend
 ### 2.1 - Installation des paquets de Node
@@ -19,7 +19,7 @@ Par exemple :
 A l'aide d'un terminal exécutez la commande "**npm install**" en étant localisé dans le dossier du **backend**.<br>
 Par exemple :
 
-	C:\Users\Default\Documents\P6\backend> npm install
+	C:\Users\Default\Documents\Groupomania\backend> npm install
 
 Cela devrait installer tous les modules nécessaires au bon fonctionnement du serveur.<br>
 En cas d'erreur, merci de bien vouloir vous référer à la rubrique 2.3 avant de faire l'étape 2.2.
@@ -29,7 +29,7 @@ En cas d'erreur, merci de bien vouloir vous référer à la rubrique 2.3 avant d
 A l'aide de ce même terminal, exécutez la commande "**node server.js**" en étant toujours localisé dans le dossier du **backend**.<br>
 Par exemple :
 
-	C:\Users\Default\Documents\P6\backend> node server.js
+	C:\Users\Default\Documents\Groupomania\backend> node server.js
 
 Le terminal devrait afficher les messages suivants :
 
@@ -55,7 +55,7 @@ Une fois fait, vous pouvez retenter de relancer la commande "**npm install**" et
 A l'aide d'un terminal exécutez la commande "**npm install**" en étant localisé dans le dossier du **frontend**.<br>
 Par exemple :
 
-	C:\Users\Default\Documents\P6\frontend> npm install
+	C:\Users\Default\Documents\Groupomania\frontend> npm install
 
 Cela devrait installer tous les modules nécessaires au bon fonctionnement du site.<br>
 En cas d'erreur, merci de bien vouloir vous référer à la rubrique 3.3 avant de faire l'étape 3.2.
@@ -65,7 +65,7 @@ En cas d'erreur, merci de bien vouloir vous référer à la rubrique 3.3 avant d
 A l'aide de ce même terminal, exécutez la commande "**npm run serve**" en étant localisé dans le dossier racine du **frontend**.<br>
 Par exemple :
 
-    C:\Users\Default\Documents\P6\Web-Developer-P6-master> npm run serve
+    C:\Users\Default\Documents\Groupomania\frontend> npm run serve
 
 Le terminal devrait compiler pour lancer le frontend. Laissez ce terminal de côté et passez à l'étape 4.
 
