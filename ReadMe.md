@@ -34,7 +34,7 @@ Par exemple :
 Le terminal devrait afficher les messages suivants :
 
     "Serveur lancé au port 3000"
-    "Connexion à MongoDB Atlas réussi !"
+    "Connexion à MongoDB Atlas réussie !"
 
 Le serveur local devrait désormais être lancé.<br>
 Laissez ce terminal de côté et ouvrez-en un autre pour les prochaines étapes.
