@@ -57,8 +57,7 @@ Par exemple :
 
 	C:\Users\Default\Documents\Groupomania\frontend> npm install
 
-Cela devrait installer tous les modules nécessaires au bon fonctionnement du site.<br>
-En cas d'erreur, merci de bien vouloir vous référer à la rubrique 3.3 avant de faire l'étape 3.2.
+Cela devrait installer tous les modules nécessaires au bon fonctionnement du site.
 
 ### 3.2 - Initialisation du frontend
 
@@ -67,17 +66,18 @@ Par exemple :
 
     C:\Users\Default\Documents\Groupomania\frontend> npm run serve
 
-Le terminal devrait compiler pour lancer le frontend. Laissez ce terminal de côté et passez à l'étape 4.
+En cas d'erreur, merci de bien vouloir vous référer à la rubrique 3.3 avant de continuer à l'étape 4.<br>
+Sans erreur, le terminal devrait compiler pour lancer le frontend. Laissez ce terminal de côté et passez à l'étape 4.
 
 ### 3.3 - En cas d'erreur
 
-Si la commande "**npm install**" a rencontré des erreurs, notamment sur *vue-cli-service*, vous pouvez exécuter les commandes suivantes :
+Si la commande "**npm run serve**" a rencontré des erreurs, notamment sur *vue-cli-service*, vous pouvez exécuter les commandes suivantes :
 
-    npm install -g @vue/cli-service
+    npm install @vue/cli-service
     npm cache clean --force
 
 Ceci devrait résoudre les problèmes de *vue-cli-service*.<br>
-Une fois fait, vous pouvez retenter de relancer la commande "**npm install**" et revenir à l'étape 3.2.
+Une fois fait, vous pouvez retenter de relancer la commande "**npm run serve**" et revenir à l'étape 3.2.
 
 ## 4 - Lancement sur navigateur
 
