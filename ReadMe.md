@@ -22,9 +22,19 @@ Par exemple :
 	C:\Users\Default\Documents\Groupomania\backend> npm install
 
 Cela devrait installer tous les modules nécessaires au bon fonctionnement du serveur.<br>
-En cas d'erreur, merci de bien vouloir vous référer à la rubrique 2.3 avant de faire l'étape 2.2.
+En cas d'erreur, merci de bien vouloir vous référer à la rubrique 2.2 sinon, passez à l'étape 2.3.
 
-### 2.2 - Initialisation du serveur local
+### 2.2 - En cas d'erreur
+
+Si la commande "**npm install**" a rencontré des erreurs, notamment sur *bcrypt*, vous pouvez exécuter les commandes suivantes :
+
+    npm rebuild bcrypt --build-from-source
+    npm cache clean --force
+
+Ceci devrait résoudre les problèmes de *bcrypt*.<br>
+Une fois fait, vous pouvez relancer la commande "**npm install**" et passer à l'étape 2.3.
+
+### 2.3 - Initialisation du serveur local
 
 A l'aide de ce même terminal, exécutez la commande "**node server.js**" en étant toujours localisé dans le dossier du **backend**.<br>
 Par exemple :
@@ -39,20 +49,10 @@ Le terminal devrait afficher les messages suivants :
 Le serveur local devrait désormais être lancé.<br>
 Laissez ce terminal de côté et ouvrez-en un autre pour les prochaines étapes.
 
-### 2.3 - En cas d'erreur
-
-Si la commande "**npm install**" a rencontré des erreurs, notamment sur *bcrypt*, vous pouvez exécuter les commandes suivantes :
-
-    npm rebuild bcrypt --build-from-source
-    npm cache clean --force
-
-Ceci devrait résoudre les problèmes de *bcrypt*.<br>
-Une fois fait, vous pouvez retenter de relancer la commande "**npm install**" et revenir à l'étape 2.2.
-
 ## 3 - Démarrage du frontend
 ### 3.1 - Installation des paquets de Node
 
-A l'aide d'un terminal exécutez la commande "**npm install**" en étant localisé dans le dossier du **frontend**.<br>
+A l'aide d'un terminal, exécutez la commande "**npm install**" en étant localisé dans le dossier du **frontend**.<br>
 Par exemple :
 
 	C:\Users\Default\Documents\Groupomania\frontend> npm install
@@ -94,9 +94,8 @@ Dans les deux cas, un lien indiqué sur la page par "Cliquez-ici !" vous permet 
 ## 5 - Aller plus loin
 
 Créez un compte avec une adresse mail fictive et un mot de passe simple pour accéder au reste du contenu.<br>
-Sinon, deux comptes sont déjà créés actuellement et à disposition :
+Sinon, un compte est actuellement créé et à disposition :
 
 | E-Mail | Mot de passe |
 |:--------:|:-------------:|
 | test@gmail.com | 22 |
-| admin@admin.com | admin |
