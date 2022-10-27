@@ -1,0 +1,107 @@
+/* ---------------------- APP.VUE ---------------------- */
+
+#logo
+{
+  width: 130px;
+}
+#nav
+{
+  font-size: 12px;
+}
+
+/* ---------------------- AUTHENTIFICATION.VUE ---------------------- */
+
+#global-container
+{
+  flex-direction: column;
+  align-items: center;
+}
+#infos-container,
+#fields-container
+{
+  width: 80%;
+  margin-bottom: 30px;
+}
+#infos__welcome
+{
+  margin: 20px 0px;
+  font-size: 20px;
+}
+#infos__text
+{
+  font-size: 14px;
+}
+#infos__account
+{
+  font-size: 12px;
+}
+
+.field
+{
+  font-size: 14px;
+}
+#field-title
+{
+  font-size: 20px;
+}
+
+/* ---------------------- POSTLIST.VUE ---------------------- */
+
+#top-bar-text > h1
+{
+  font-size: 26px;
+}
+.main-button
+{
+  font-size: 16px;
+}
+
+.card
+{
+  width: 90%;
+}
+.card-text
+{
+  font-size: 16px;
+}
+.vote-icon
+{
+  padding: 25px 25px;
+  font-size: 14px;
+}
+.like
+{
+  display: none;
+}
+.dislike
+{
+  display: none;
+}
+.vote-number
+{
+  position: absolute;
+  right: 16px;
+  bottom: 14px;
+}
+
+.control-icon
+{
+  font-size: 18px;
+}
+
+/* ---------------------- ADDPOST.VUE ---------------------- */
+
+#fields
+{
+  flex-direction: column;
+  align-items: center;
+}
+.text-field,
+.image-field
+{
+    width: 90%;
+}
+.text-field
+{
+  margin-bottom: 30px;
+}

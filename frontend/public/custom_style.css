@@ -1,0 +1,394 @@
+@font-face
+{
+	font-family: 'Lato';
+	src: url('/assets/fonts/Lato/Lato-Light.ttf') format('truetype');
+    font-weight: 100;
+}
+@font-face
+{
+	font-family: 'Lato';
+	src: url('/assets/fonts/Lato/Lato-Thin.ttf') format('truetype');
+    font-weight: 300;
+}
+@font-face
+{
+	font-family: 'Lato';
+	src: url('/assets/fonts/Lato/Lato-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face
+{
+	font-family: 'Lato';
+	src: url('/assets/fonts/Lato/Lato-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+@font-face
+{
+	font-family: 'Lato';
+	src: url('/assets/fonts/Lato/Lato-Black.ttf') format('truetype');
+    font-weight: 900;
+}
+
+*
+{
+    font-family: Lato;
+}
+
+/* ---------------------- APP.VUE ---------------------- */
+
+#app
+{
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	color: #2c3e50;
+}
+#header-container
+{
+  display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 100px;
+  background-color: #4E5166;
+  box-shadow: 5px 5px 10px lightgray;
+}
+#logo
+{
+	z-index: 0;
+	width: 200px;
+	height: 100%;
+	object-fit: contain;
+	margin-left: 30px;
+}
+#nav
+{
+	padding: 30px;
+}
+#nav a
+{
+	font-weight: bold;
+	color: white;
+}
+#nav a.router-link-exact-active
+{
+	color: #42b983;
+}
+
+/* ---------------------- AUTHENTIFICATION.VUE ---------------------- */
+
+#global-container
+{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-weight: 600;
+}
+#infos-container
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #4E5166;
+  width: 60%;
+  box-shadow: 5px 5px 10px lightgray;
+  border-radius: 20px;
+  color: white;
+}
+#infos__welcome
+{
+  width: 80%;
+  font-weight: 900;
+}
+#infos__text
+{
+  width: 80%;
+  font-size: 18px;
+}
+#router_click > a
+{
+  text-decoration: underline;
+  color: #42b983;
+}
+
+#fields-container
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #4E5166;
+  width: 30%;
+  padding: 30px 0px;
+  box-shadow: 5px 5px 10px lightgray;
+  border-radius: 20px;
+}
+.field
+{
+  width: 100%;
+  padding: 0px 20px 20px 20px;
+  color: white;
+}
+#field-title
+{
+  font-weight: 900;
+  padding-bottom: 20px;
+}
+.button-container
+{
+  width: 11%;
+  min-width: 200px;
+}
+.button
+{
+  margin-top: 10px;
+}
+.main-button
+{
+  background-color: #FD2D01;
+  color: white;
+  width: 100%;
+  min-width: 200px;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 5px 5px 5px rgb(49, 49, 49);
+  font-size: 18px;
+  padding: 10px 10px 10px 30px;
+}
+.main-button:hover
+{
+  background-color: #FFD7D7;
+}
+.main-button-icon
+{
+  position: relative;
+  right: 10px;
+  color: white;
+}
+
+/* ---------------------- POSTLIST.VUE ---------------------- */
+
+#top-bar
+{
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#cards-container
+{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.card
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  border: none;
+  width: 60%;
+  min-height: 200px;
+  border-radius: 25px;
+  background-color: #4E5166;
+  box-shadow: 10px 10px 20px rgb(88, 88, 88);
+  margin-bottom: 60px;
+}
+.card-text
+{
+  min-height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(109, 109, 109);
+}
+.card-text > p
+{
+  text-align: justify;
+  width: 85%;
+  margin: 20px 0px;
+}
+.card-image
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+  width: 100%;
+  margin: 50px 0px;
+}
+.images
+{
+  width: 80%;
+}
+.card-options
+{
+  width: 100%;
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgb(109, 109, 109);
+}
+.card-likes
+{
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+}
+.vote-icon
+{
+  position: relative;
+  background-color: #FFD7D7;
+  padding: 25px 50px;
+  margin: 5px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 10px rgb(39, 39, 39);
+  cursor: pointer;
+}
+.vote-icon:hover
+{
+  background-color: #ff9494;
+}
+.like
+{
+  color: green;
+  position: absolute;
+  left: 15px;
+  bottom: 17px;
+}
+.dislike
+{
+  color: red;
+  position: absolute;
+  left: 15px;
+  bottom: 12px;
+}
+.vote-number
+{
+  position: absolute;
+  right: 25px;
+  bottom: 10px;
+}
+.number-like
+{
+  color: green;
+}
+.number-dislike
+{
+  color: red;
+}
+.card-control
+{
+  margin-right: 10px;
+}
+.control-icon
+{
+  color: black;
+  background-color:#FFD7D7;
+  padding: 15px;
+  margin: 5px;
+  font-size: 20px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 10px rgb(39, 39, 39);
+}
+.control-icon:hover
+{
+  background-color: #ff9494;
+}
+
+/* ---------------------- ADDPOST.VUE ---------------------- */
+
+#add-post-container
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 3%;
+}
+
+#fields
+{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0px 0px 50px 0px;
+}
+.text-field,
+.image-field
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+  background-color: #4E5166;
+  box-shadow: 10px 10px 20px rgb(88, 88, 88);
+  border-radius: 25px;
+}
+.text-field
+{
+  width: 60%;
+}
+.image-field
+{
+  width: 30%;
+}
+.field-label
+{
+  margin: 15px 0px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+.image-button
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#image-input
+{
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #FFD7D7;
+  color: black;
+  width: 80%;
+  border-radius: 25px;
+  box-shadow: 10px 10px 20px rgba(39, 39, 39, 0.61);
+  cursor: pointer;
+}
+#image-input:hover
+{
+  background-color: #ff9494;
+}
+#chosen-image
+{
+  color: white;
+}
+
+/* ---------------------- EDITPOST.VUE ---------------------- */
+
+#edit-container
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 400px;
+}
+.edit-post-field
+{
+  width: 80%;
+}
