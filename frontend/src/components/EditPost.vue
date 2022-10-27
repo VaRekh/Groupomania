@@ -5,7 +5,7 @@
       <router-link to="/posts">
         <div id="add-post-text">
           <button class="main-button">
-            <font-awesome-icon icon="fa-solid fa-arrow-left" class="main-button-icon"/>
+            <font-awesome-icon icon="fa-solid fa-arrow-left" class="main-button-icon"></font-awesome-icon>
             Retour
           </button>
         </div>
@@ -15,13 +15,13 @@
     <div class="field text-field edit-post-field">
       <label class="label field-label">Description</label>
       <div class="control">
-        <input class="input form-control" type="text" placeholder="Description" v-model="description"/>
+        <input class="input form-control" type="text" placeholder="Description" v-model="description">
       </div>
     </div>
  
     <div class="button-container">
       <button class="button is-success main-button" @click="updatePost">
-        <font-awesome-icon icon="fa-solid fa-pen-to-square" class="main-button-icon" />
+        <font-awesome-icon icon="fa-solid fa-pen-to-square" class="main-button-icon"></font-awesome-icon>
         Modifier
       </button>
     </div>

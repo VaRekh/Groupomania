@@ -9,7 +9,7 @@
         <router-link :to="{ name: 'PostCreate' }" class="button is-success mt-5">
           <div id="add-post-text">
             <button class="main-button">
-              <font-awesome-icon icon="fa-solid fa-plus" class="main-button-icon"/>
+              <font-awesome-icon icon="fa-solid fa-plus" class="main-button-icon"></font-awesome-icon>
               Nouveau message
             </button>
           </div>
@@ -23,25 +23,25 @@
           <p>{{ item.description }}</p>
         </div>
         <div class="card-image">
-          <img class="images" :src="item.postImage" alt="Image postée par un internaute" />
+          <img class="images" :src="item.postImage" alt="Image postée par un internaute">
         </div>
         <div class="card-options">
           <div class="card-likes">
             <div class="vote-icon" @click="addLike(item._id)">
-              <font-awesome-icon icon="fa-solid fa-thumbs-up" class="like"/>
+              <font-awesome-icon icon="fa-solid fa-thumbs-up" class="like"></font-awesome-icon>
               <span class="vote-number number-like"> + {{item.usersLiked.length}}</span>
             </div>
             <div class="vote-icon" @click="addDislike(item._id)">
-              <font-awesome-icon icon="fa-solid fa-thumbs-down" class="dislike"/>
+              <font-awesome-icon icon="fa-solid fa-thumbs-down" class="dislike"></font-awesome-icon>
               <span class="vote-number number-dislike"> - {{item.usersDisliked.length}}</span>
             </div>
           </div>
           <div class="card-control" v-if="userId == '6356d9bd57848d3bcb47fa9e' || userId== item.userId">
             <router-link :to="{ name: 'PostEdit', params: { id: item._id } }" class="button is-info is-small">
-              <font-awesome-icon icon="fa-solid fa-pen-to-square" class="control-icon" />
+              <font-awesome-icon icon="fa-solid fa-pen-to-square" class="control-icon"></font-awesome-icon>
             </router-link>
             <a class="button is-danger is-small" @click="deletePost(item._id)">
-              <font-awesome-icon icon="fa-solid fa-trash" class="control-icon" />
+              <font-awesome-icon icon="fa-solid fa-trash" class="control-icon"></font-awesome-icon>
             </a>
           </div>
         </div>

@@ -307,7 +307,7 @@ table.dataTable thead > tr > td.sorting {
 	margin: 0 !important;
 }
 .m-r-5 {
-	margin-right: px !important;
+	margin-right: 5px !important;
 }
 .m-r-10 {
 	margin-right: 10px !important;
@@ -8561,7 +8561,7 @@ ul.comment-list li ul.children {
 	box-sizing: border-box;
 	border: none;
 	border-radius: 50px;
-	padding: 2 25px;
+	padding: 2px 25px;
 	min-width: 42px;
 	height: 42px;
 	vertical-align: bottom;
@@ -8678,7 +8678,7 @@ ul.comment-list li ul.children {
 	box-sizing: border-box;
 	border: none;
 	border-radius:50px;
-	padding: 8 12px;
+	padding: 8px 12px;
 	min-width:70px;
 	height:70px;
 	vertical-align: bottom;

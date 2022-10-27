@@ -9,7 +9,7 @@
         <router-link to="/posts">
           <div id="add-post-text">
             <button class="main-button">
-              <font-awesome-icon icon="fa-solid fa-arrow-left" class="main-button-icon"/>
+              <font-awesome-icon icon="fa-solid fa-arrow-left" class="main-button-icon"></font-awesome-icon>
               Retour
             </button>
           </div>
@@ -21,7 +21,7 @@
       <div class="field text-field">
         <label class="label field-label">Message</label>
         <div class="control">
-          <input class="input form-control" type="text" placeholder="Écrivez votre message ici..." v-model="description"/>
+          <input class="input form-control" type="text" placeholder="Écrivez votre message ici..." v-model="description">
         </div>
       </div>
       <div class="field image-field">
@@ -36,7 +36,7 @@
 
     <div class="button-container">
       <button class="button is-success main-button" @click="savePost">
-        <font-awesome-icon icon="fa-solid fa-plus" class="main-button-icon"/>
+        <font-awesome-icon icon="fa-solid fa-plus" class="main-button-icon"></font-awesome-icon>
         Poster
       </button>
     </div>

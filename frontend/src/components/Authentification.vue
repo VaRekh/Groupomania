@@ -18,18 +18,18 @@
         <h2 id="field-title">Connectez-vous</h2>
         <label class="label">Email</label>
         <div class="control">
-          <input class="input form-control" type="text" placeholder="Email" v-model="email"/>
+          <input class="input form-control" type="text" placeholder="Email" v-model="email">
         </div>
       </div>
       <div class="field">
         <label class="label">Mot de passe</label>
         <div class="control">
-          <input class="input form-control" type="text" placeholder="Mot de passe" v-model="password"/>
+          <input class="input form-control" type="text" placeholder="Mot de passe" v-model="password">
         </div>
       </div>
       <div class="button-container">
         <button class="button is-success main-button" @click="authentification">
-          <font-awesome-icon icon="fa-solid fa-globe" class="main-button-icon"/>
+          <font-awesome-icon icon="fa-solid fa-globe" class="main-button-icon"></font-awesome-icon>
           Connexion
         </button>
       </div>
