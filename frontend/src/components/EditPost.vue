@@ -55,7 +55,7 @@ export default
     {
       try
       {
-        const response   = await axios.get(`http://localhost:3000/api/posts/${this.$route.params.id}`,
+        const response   = await axios.get(this.base_url + `/posts/${this.$route.params.id}`,
                                          { headers: { 'Authorization': 'Bearer '
                                                       + localStorage.getItem("token") }});
         this.description = response.data.description;
@@ -72,7 +72,7 @@ export default
       {
         var dataPost= { description       :  this.description };
 
-		    await axios.put(`http://localhost:3000/api/posts/${this.$route.params.id}`,
+		    await axios.put(this.base_url + `/posts/${this.$route.params.id}`,
                         dataPost,
                       { headers: { 'Authorization': 'Bearer '
                                    + localStorage.getItem("token") }});

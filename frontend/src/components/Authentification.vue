@@ -28,7 +28,7 @@
         </div>
       </div>
       <div class="button-container">
-        <button class="button is-success main-button" @click="authentification">
+        <button class="button is-success main-button" @click="validateEmailExistence">
           <font-awesome-icon icon="fa-solid fa-globe" class="main-button-icon"></font-awesome-icon>
           Connexion
         </button>
@@ -55,16 +55,42 @@ export default
   },
   methods:
   {
+    // Vérification de l'existence d'une adresse mail dans le champs prévue à cet effet, puis vérification du mot de passe
+    async validateEmailExistence()
+    {
+      let does_email_exist = this.email != "";
+      if (does_email_exist)
+      {
+        this.validatePassword();
+      }
+      else
+      {
+        alert("Veuillez entrer une adresse e-mail.")
+      }
+    },
+    // Vérification de l'existence d'un mot de passe
+    async validatePasswordExistence()
+    {
+      let password_exist = this.password != "";
+			if(password_exist) // Regex de vérification
+			{
+        this.authentification();
+			}
+			else
+			{
+        alert("Veuillez entrer un mot de passe");
+			}
+    },
     // Permet d'authentifier les informations entrées par l'utilisateur avec celles contenues dans la base de données
     // S'il n'y pas d'erreur un token est créé et stocké, permettant de gérer les droits de l'utilisateur
     async authentification()
     {
       try
       {
-		    var dataPost = { email    : this.email,
-		    	               password : this.password }
+        var dataPost = { email    : this.email,
+		                   password : this.password }
 
-        await axios.post("http://localhost:3000/api/auth/login",
+        await axios.post(this.base_url + "/auth/login",
                          { headers: { 'Content-Type': 'application/json' },
                            dataPost })
           .then(function (response)
@@ -74,8 +100,10 @@ export default
           })
           .catch(function (error)
           {
+            alert("Adresse e-mail ou mot de passe incorrecte.s")
             console.log(error);
-          });
+          }
+        );
       }
       catch (err)
       {

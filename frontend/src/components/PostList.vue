@@ -78,7 +78,7 @@ export default
     {
       try
       {
-        const response = await axios.get("http://localhost:3000/api/posts/user",
+        const response = await axios.get(this.base_url + "/posts/user",
                                         { headers: { 'Authorization': 'Bearer '
                                                       + localStorage.getItem("token") }});
         this.userId    = response.data.userId;
@@ -93,7 +93,7 @@ export default
     {
       try
       {
-        const response = await axios.get("http://localhost:3000/api/posts/all",
+        const response = await axios.get(this.base_url + "/posts/all",
                                         { headers: { 'Authorization': 'Bearer '
                                                       + localStorage.getItem("token") }});
         this.items     = response.data;
@@ -108,7 +108,7 @@ export default
     {
       try
       {
-        await axios.delete(`http://localhost:3000/api/posts/${id}`,
+        await axios.delete(this.base_url + `/posts/${id}`,
                           { headers: { 'Authorization': 'Bearer '
                                        + localStorage.getItem("token") }});
         this.getAllPosts();
@@ -126,7 +126,7 @@ export default
         var dataPost = { id   :  id,
                          like :  1  };
 
-        await axios.post("http://localhost:3000/api/posts/like",
+        await axios.post(this.base_url + "/posts/like",
                          dataPost,
                        { headers: { 'Authorization': 'Bearer '
                                     + localStorage.getItem("token") }});
@@ -144,7 +144,7 @@ export default
       {
         var dataPost = { id   :  id,
                          like :  -1 };
-        await axios.post("http://localhost:3000/api/posts/like",
+        await axios.post(this.base_url + "/posts/like",
                          dataPost,
                        { headers: { 'Authorization': 'Bearer '
                                     + localStorage.getItem("token") }});

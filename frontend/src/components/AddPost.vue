@@ -98,12 +98,12 @@ export default
     // Permet d'envoyer le post et son contenu vers la base de données, avec le header adéquat pour gérer les autorisations de l'utilisateur, et enfin de renvoyer vers la page /posts
 	  async postData(params)
     {
-      await axios.post("http://localhost:3000/api/posts",
+      await axios.post(this.base_url + "/posts",
                        params,
                      { headers: { 'Authorization': 'Bearer '
                                  + localStorage.getItem("token") }});
       this.$router.push("/posts");
-    },
-  },
+    }
+  }
 };
 </script>
