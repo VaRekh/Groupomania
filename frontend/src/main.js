@@ -45,14 +45,15 @@ const routes =
   },
 ];
  
-const router = new VueRouter({ mode: 'history', routes: routes })
+const router = new VueRouter({ mode: 'history', routes: routes });
+Vue.prototype.base_url = "http://localhost:3000/api";
 
-library.add(faPlus, faArrowLeft, faTrash, faPenToSquare, faThumbsUp, faThumbsDown, faGlobe, faPen)
-Vue.component('font-awesome-icon', FontAwesomeIcon)
-Vue.config.productionTip = false
+library.add(faPlus, faArrowLeft, faTrash, faPenToSquare, faThumbsUp, faThumbsDown, faGlobe, faPen);
+Vue.component('font-awesome-icon', FontAwesomeIcon);
+Vue.config.productionTip = false;
 
 new Vue({
   // init router
   router,
   render: h => h(App),
-}).$mount('#app')
+}).$mount('#app');
