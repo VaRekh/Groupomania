@@ -73,7 +73,7 @@
 }
 #nav a.router-link-exact-active
 {
-	color: #42b983;
+	color: #55ffb2;
 }
 
 /* ---------------------- AUTHENTIFICATION.VUE ---------------------- */
@@ -111,7 +111,7 @@
 #router_click > a
 {
   text-decoration: underline;
-  color: #42b983;
+  color: #55ffb2;
 }
 
 #fields-container
@@ -148,13 +148,14 @@
 .main-button
 {
   background-color: #FD2D01;
-  color: white;
+  color: black;
   width: 100%;
   min-width: 200px;
   border-radius: 25px;
   border: none;
   box-shadow: 5px 5px 5px rgb(49, 49, 49);
   font-size: 18px;
+  font-weight: bold;
   padding: 10px 10px 10px 30px;
 }
 .main-button:hover
@@ -165,7 +166,7 @@
 {
   position: relative;
   right: 10px;
-  color: white;
+  color: black;
 }
 
 /* ---------------------- POSTLIST.VUE ---------------------- */
@@ -212,7 +213,6 @@
 }
 .card-text > p
 {
-  text-align: justify;
   width: 85%;
   margin: 20px 0px;
 }
@@ -263,14 +263,14 @@
 }
 .like
 {
-  color: green;
+  color: rgb(0, 97, 0);
   position: absolute;
   left: 15px;
   bottom: 17px;
 }
 .dislike
 {
-  color: red;
+  color: #7E1601;
   position: absolute;
   left: 15px;
   bottom: 12px;
@@ -283,11 +283,11 @@
 }
 .number-like
 {
-  color: green;
+  color: rgb(0, 97, 0);
 }
 .number-dislike
 {
-  color: red;
+  color: #7E1601;
 }
 .card-control
 {
@@ -364,6 +364,7 @@
   padding: 10px;
   background-color: #FFD7D7;
   color: black;
+  font-weight: bold;
   width: 80%;
   border-radius: 25px;
   box-shadow: 10px 10px 20px rgba(39, 39, 39, 0.61);
