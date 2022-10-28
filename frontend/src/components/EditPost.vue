@@ -13,9 +13,9 @@
     </div>
 
     <div class="field text-field edit-post-field">
-      <label class="label field-label">Description</label>
       <div class="control">
-        <input class="input form-control" type="text" placeholder="Description" v-model="description">
+        <label for="description" class="label field-label">Description</label>
+        <input id="description" class="input form-control" type="text" placeholder="Description" v-model="description">
       </div>
     </div>
  

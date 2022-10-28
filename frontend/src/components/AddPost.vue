@@ -19,9 +19,9 @@
 
     <div id="fields">
       <div class="field text-field">
-        <label class="label field-label">Message</label>
         <div class="control">
-          <input class="input form-control" type="text" placeholder="Écrivez votre message ici..." v-model="description">
+          <label for="description" class="label field-label">Message</label>
+          <input id="description" class="input form-control" type="text" placeholder="Écrivez votre message ici..." v-model="description">
         </div>
       </div>
       <div class="field image-field">

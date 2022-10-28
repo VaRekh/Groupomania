@@ -16,15 +16,15 @@
     <div id="fields-container">
       <div class="field">
         <h2 id="field-title">Créez un compte</h2>
-        <label class="label">Email</label>
         <div class="control">
-          <input class="input form-control" type="text" placeholder="Email" v-model="email">
+          <label for="email" class="label">Email</label>
+          <input id="email" class="input form-control" type="text" placeholder="Email" v-model="email">
         </div>
       </div>
       <div class="field">
-        <label class="label">Mot de passe</label>
         <div class="control">
-          <input class="input form-control" type="text" placeholder="Mot de passe" v-model="password">
+          <label for="password" class="label">Mot de passe</label>
+          <input id="password" class="input form-control" type="text" placeholder="Mot de passe" v-model="password">
         </div>
       </div>
       <div class="button-container">
